@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QueryScript</title>
+    <script src="https://unpkg.com/queryscript@0.0.0-alpha/index.js"></script>
   </head>
   <body>
-    <h1>Welcome to QueryScript</h1>
+    <div id="app">
+      <h1>{{message}}</h1>
 
-    <ul>
-      <li><h2>No Virtual DOM</h2></li>
-      <li><h2>No Scope</h2></li>
-      <li><h2>No States</h2></li>
-      <li><h2>No more Reconciliation</h2></li>
-      <li><h2>Just pure reactivity in JavaScript</h2></li>
-    </ul>
+      <ul>
+        <li><h2>No Virtual DOM</h2></li>
+        <li><h2>No Scope</h2></li>
+        <li><h2>No States</h2></li>
+        <li><h2>No more Reconciliation</h2></li>
+        <li><h2>Just pure reactivity in JavaScript</h2></li>
+      </ul>
+    </div>
+
+    <button @click="changeMessage()">Click to change message</button>
+    <script src="./index.js"></script>
   </body>
 </html>
